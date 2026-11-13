@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+int pincode=1234,p,balans=9200,num;
+    for(int i=1; i<=3; i++){
+        printf("\nPincodeni kiriting, shep >>> \n");
+        scanf("%d",&p);
+        if(p==pincode){
+            printf("Tog'ri topdingiz, shep");
+            printf("\nBalansni korish uchun 1 ni bosing >>> ");
+            printf("\nPul qoshish uchun 2 ni bosing >>>");
+            printf("\nPul yechish uchun 3 ni kiriting>>> ");
+            scanf("%d/n",&num);
+                if(num==1){
+                    printf("Balansingiz: %d",balans);
+                    break;}
+                else if(num==2)
+                    printf("Pul qo'shildi");
+                else if(num==3)
+                    printf("Pul muvaffaqqiyatli qo'shildi");
+                else 
+                    printf("Raqam xato kiritildi");
+                    break;
+        }
+        else {
+            printf("Xato");
+        }
+    }
+
+
+}
